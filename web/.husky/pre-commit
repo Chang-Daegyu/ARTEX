@@ -1,0 +1,6 @@
+# 한국어 해설: 커밋 전에 CSS 프리셋 목록을 다시 생성하고 생성 결과를 스테이징한다.
+# 이어서 lint-staged가 스테이징된 소스에 Biome 검사/자동 수정을 적용한다.
+# 설명 주석만 추가할 때도 훅 실행은 별도 파일 변경을 만들 수 있으므로 git diff를 확인한다.
+npm run generate:presets
+git add src/lib/preferences/theme.ts
+npm exec -- lint-staged

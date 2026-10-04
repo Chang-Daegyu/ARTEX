@@ -1,0 +1,97 @@
+/**
+ * 한국어 해설 — src/styles/presets/brutalist.css
+ * 강한 대비와 선명한 강조색의 Brutalist 테마 토큰 정의.
+ * 같은 프리셋 키 아래 밝은 모드와 .dark 모드를 나누어 배경·텍스트·테두리·차트·사이드바 색 및 그림자를 지정한다.
+ * 앞부분의 이름/키 메타데이터와 primary 색은 generate-theme-presets.ts가 읽으므로 구문을 유지한다.
+ * 컴포넌트는 구체 색을 직접 선택하는 대신 CSS 변수를 참조해 이 프리셋을 공유한다.
+ */
+
+/* 
+label: Brutalist
+value: brutalist 
+*/
+
+:root[data-theme-preset="brutalist"] {
+  --radius: 0px;
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0 0 0);
+  --primary: oklch(0.6489 0.237 26.9728);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.968 0.211 109.7692);
+  --secondary-foreground: oklch(0 0 0);
+  --muted: oklch(0.9551 0 0);
+  --muted-foreground: oklch(0.3211 0 0);
+  --accent: oklch(0.5635 0.2408 260.8178);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0 0 0);
+  --border: oklch(0 0 0);
+  --input: oklch(0 0 0);
+  --ring: oklch(0.6489 0.237 26.9728);
+  --chart-1: oklch(0.6489 0.237 26.9728);
+  --chart-2: oklch(0.968 0.211 109.7692);
+  --chart-3: oklch(0.5635 0.2408 260.8178);
+  --chart-4: oklch(0.7323 0.2492 142.4953);
+  --chart-5: oklch(0.5931 0.2726 328.3634);
+  --sidebar: oklch(0.9551 0 0);
+  --sidebar-foreground: oklch(0 0 0);
+  --sidebar-primary: oklch(0.6489 0.237 26.9728);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.5635 0.2408 260.8178);
+  --sidebar-accent-foreground: oklch(1 0 0);
+  --sidebar-border: oklch(0 0 0);
+  --sidebar-ring: oklch(0.6489 0.237 26.9728);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0 0 0);
+  --shadow-2xs: 4px 4px 0px 0px hsl(0 0% 0% / 0.5);
+  --shadow-xs: 4px 4px 0px 0px hsl(0 0% 0% / 0.5);
+  --shadow-sm: 4px 4px 0px 0px hsl(0 0% 0% / 1), 4px 1px 2px -1px hsl(0 0% 0% / 1);
+  --shadow: 4px 4px 0px 0px hsl(0 0% 0% / 1), 4px 1px 2px -1px hsl(0 0% 0% / 1);
+  --shadow-md: 4px 4px 0px 0px hsl(0 0% 0% / 1), 4px 2px 4px -1px hsl(0 0% 0% / 1);
+  --shadow-lg: 4px 4px 0px 0px hsl(0 0% 0% / 1), 4px 4px 6px -1px hsl(0 0% 0% / 1);
+  --shadow-xl: 4px 4px 0px 0px hsl(0 0% 0% / 1), 4px 8px 10px -1px hsl(0 0% 0% / 1);
+  --shadow-2xl: 4px 4px 0px 0px hsl(0 0% 0% / 2.5);
+}
+
+.dark:root[data-theme-preset="brutalist"] {
+  --background: oklch(0 0 0);
+  --foreground: oklch(1 0 0);
+  --card: oklch(0.3211 0 0);
+  --card-foreground: oklch(1 0 0);
+  --popover: oklch(0.3211 0 0);
+  --popover-foreground: oklch(1 0 0);
+  --primary: oklch(0.7044 0.1872 23.1858);
+  --primary-foreground: oklch(0 0 0);
+  --secondary: oklch(0.9691 0.2005 109.6228);
+  --secondary-foreground: oklch(0 0 0);
+  --muted: oklch(0.3211 0 0);
+  --muted-foreground: oklch(0.8452 0 0);
+  --accent: oklch(0.6755 0.1765 252.2592);
+  --accent-foreground: oklch(0 0 0);
+  --destructive: oklch(1 0 0);
+  --border: oklch(1 0 0);
+  --input: oklch(1 0 0);
+  --ring: oklch(0.7044 0.1872 23.1858);
+  --chart-1: oklch(0.7044 0.1872 23.1858);
+  --chart-2: oklch(0.9691 0.2005 109.6228);
+  --chart-3: oklch(0.6755 0.1765 252.2592);
+  --chart-4: oklch(0.7395 0.2268 142.8504);
+  --chart-5: oklch(0.6131 0.2458 328.0714);
+  --sidebar: oklch(0 0 0);
+  --sidebar-foreground: oklch(1 0 0);
+  --sidebar-primary: oklch(0.7044 0.1872 23.1858);
+  --sidebar-primary-foreground: oklch(0 0 0);
+  --sidebar-accent: oklch(0.6755 0.1765 252.2592);
+  --sidebar-accent-foreground: oklch(0 0 0);
+  --sidebar-border: oklch(1 0 0);
+  --sidebar-ring: oklch(0.7044 0.1872 23.1858);
+  --shadow-2xs: 4px 4px 0px 0px hsl(0 0% 0% / 0.5);
+  --shadow-xs: 4px 4px 0px 0px hsl(0 0% 0% / 0.5);
+  --shadow-sm: 4px 4px 0px 0px hsl(0 0% 0% / 1), 4px 1px 2px -1px hsl(0 0% 0% / 1);
+  --shadow: 4px 4px 0px 0px hsl(0 0% 0% / 1), 4px 1px 2px -1px hsl(0 0% 0% / 1);
+  --shadow-md: 4px 4px 0px 0px hsl(0 0% 0% / 1), 4px 2px 4px -1px hsl(0 0% 0% / 1);
+  --shadow-lg: 4px 4px 0px 0px hsl(0 0% 0% / 1), 4px 4px 6px -1px hsl(0 0% 0% / 1);
+  --shadow-xl: 4px 4px 0px 0px hsl(0 0% 0% / 1), 4px 8px 10px -1px hsl(0 0% 0% / 1);
+  --shadow-2xl: 4px 4px 0px 0px hsl(0 0% 0% / 2.5);
+}
