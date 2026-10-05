@@ -1,22 +1,4 @@
-# ARTEX 한국어 해설판
-
-**Go 백엔드와 Next.js 프런트엔드로 구성된 LLM 다중 에이전트 보안 연구 플랫폼입니다.**
-목표를 입력하면 계획 에이전트가 작업을 나누고, 실행 에이전트가 도구를 호출한 뒤,
-자산·관찰 사실·발견 사항·실행 기록을 저장하면서 다음 작업을 이어 갑니다.
-
-이 저장소는 [Autumn-27/ARTEX](https://github.com/Autumn-27/ARTEX)의 전체 소스 스냅샷을
-**GitHub Fork 기능 없이** [Chang-Daegyu/ARTEX](https://github.com/Chang-Daegyu/ARTEX)에 옮긴
-독립 저장소입니다. 기준 커밋은 `b55ceb1fdd84a813d77de09a06af83d323a81f85`이며,
-원본 동작을 보존하면서 한국어 설명 문서와 코드 주석을 추가했습니다.
-
-**처음에는 [한국어 문서 안내](docs/ko/README.md) → [전체 동작 해설](docs/ko/architecture.md)
-→ [전체 파일 지도](docs/ko/file-map.md) 순서로 보세요.**
-[README 원문](docs/upstream/README.md), [변경 기록 원문](docs/upstream/CHANGELOG.md),
-[출처·변경 범위](UPSTREAM.md)도 보존합니다.
-
-> 한국어화 대상은 설명 문서와 소스 주석입니다. 실행 화면의 중국어 문구, 모델에 전달되는
-> 프롬프트, API·DB·도구 식별자는 원래 동작을 유지합니다. 화면 용어는 아래 표와
-> 각 모듈 가이드에서 한국어 의미를 확인할 수 있습니다.
+# ARTEX
 
 ## 목차
 
